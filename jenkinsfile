@@ -1,4 +1,4 @@
-@Library('roboshop-shared-library') _
+library('roboshop-shared-library') _
 
 pipeline {
     agent any
@@ -7,7 +7,7 @@ pipeline {
         stage('Performing Lint Checks') {
             steps {
                 scripts {
-                    sample.info('SharedLlibrary' , 'stage.google.com')
+                    sample.info('SharedLibrary' , 'stage.google.com')
                 }
             }
         }
